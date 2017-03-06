@@ -39,9 +39,6 @@
         <th style=" background-color: darkorange;">FirstName</th>
         <th style=" background-color: darkorange;">LastName</th>
         <th style=" background-color: darkorange;">LastName</th>
-        <th style=" background-color: darkorange;">LastName</th>
-        <th style=" background-color: darkorange;">LastName</th>
-        <th style=" background-color: darkorange;">LastName</th>
         <th style=" background-color: darkorange;">Edit/Delete</th>
 
     </tr>
@@ -81,9 +78,7 @@
                 { "mData": "firstName"},
                 { "mData": "lastName"},
                 { "mData": "lastName"},
-                { "mData": "lastName"},
-                { "mData": "lastName"},
-                { "mData": "lastName"},
+
                 {
                     "mData": "customerId",
                     /*className: "btnE btnD",*/
@@ -99,6 +94,7 @@
 
 
             ],
+
             "paging":true,
             "pageLength":10,
             "ordering":true,

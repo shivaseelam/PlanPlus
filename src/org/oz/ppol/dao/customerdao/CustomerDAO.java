@@ -18,4 +18,5 @@ public interface CustomerDAO {
     public boolean insertCustomerDetail(CustomerDTO customerDTO);
     public boolean deleteCustomerDetail(int customerId);
 
+
 }

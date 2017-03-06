@@ -9,6 +9,9 @@ import org.oz.ppol.dto.CalApptDTO;
 import org.oz.ppol.dto.customerdto.CustomerDTO;
 import org.oz.ppol.service.customerservice.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -28,6 +31,7 @@ import java.util.Locale;
  */
 
 @Controller
+@RestController
 public class CustomerController {
 
 
@@ -115,6 +119,21 @@ public class CustomerController {
 
 
         return new ModelAndView("edit_customers","command",customerDTO);
+    }
+
+    @RequestMapping(value="/getCustomer/{id}",method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<CustomerDTO> getCustomerById(@PathVariable("id") int id){
+
+        CustomerDTO customerDTO = null;
+        customerDTO=customerService.getCustomerId(id);
+       if(customerDTO  == null)
+       {
+           return new ResponseEntity<CustomerDTO>(HttpStatus.NOT_FOUND);
+       }
+
+
+        return new ResponseEntity<CustomerDTO>(customerDTO, HttpStatus.OK);
+
     }
 
 
