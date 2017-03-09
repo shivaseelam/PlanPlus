@@ -3,6 +3,8 @@ package org.oz.ppol.bo.customer;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.Serializable;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Hashtable;
 
 /**
@@ -135,482 +137,492 @@ public class CustomerBO  {
     //Project ID:13189  Google Contact- NEEDs to be a 2-way sync, not just import  : N2G-010
     private String _googleContactId = "";
 
-    public int get_customerId() {
+    private Date _lastUpdateDate  = null;
+
+    /*public static final SimpleDateFormat iso8601 = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'");
+
+    protected String _ISOLastUpdateDate = null;
+
+    public void  setLastUpdateDate(Date   val)        { _lastUpdateDate = val; _ISOLastUpdateDate = iso8601.format(val);}
+
+    public String getLastUpdateDateStr() { if (_lastUpdateDate!=null) return sdf.format(_lastUpdateDate); else return ""; };
+*/
+    public int getcustomerId() {
         return _customerId;
     }
 
     @Autowired
-    public void set_customerId(int _customerId) {
+    public void setcustomerId(int _customerId) {
         this._customerId = _customerId;
     }
 
     @Autowired
-    public int get_customerNumber() {
+    public int getcustomerNumber() {
         return _customerNumber;
     }
 
     @Autowired
-    public void set_customerNumber(int _customerNumber) {
+    public void setcustomerNumber(int _customerNumber) {
         this._customerNumber = _customerNumber;
     }
 
     @Autowired
-    public String get_customerType() {
+    public String getcustomerType() {
         return _customerType;
     }
 
     @Autowired
-    public void set_customerType(String _customerType) {
+    public void setcustomerType(String _customerType) {
         this._customerType = _customerType;
     }
 
     @Autowired
-    public String get_displayName() {
+    public String getdisplayName() {
         return _displayName;
     }
 
     @Autowired
-    public void set_displayName(String _displayName) {
+    public void setdisplayName(String _displayName) {
         this._displayName = _displayName;
     }
 
     @Autowired
-    public String get_url() {
+    public String geturl() {
         return _url;
     }
 
     @Autowired
-    public void set_url(String _url) {
+    public void seturl(String _url) {
         this._url = _url;
     }
 
     @Autowired
-    public int get_netWorth() {
+    public int getnetWorth() {
         return _netWorth;
     }
 
     @Autowired
-    public void set_netWorth(int _netWorth) {
+    public void setnetWorth(int _netWorth) {
         this._netWorth = _netWorth;
     }
 
     @Autowired
-    public String get_customerCategory() {
+    public String getcustomerCategory() {
         return _customerCategory;
     }
 
     @Autowired
-    public void set_customerCategory(String _customerCategory) {
+    public void setcustomerCategory(String _customerCategory) {
         this._customerCategory = _customerCategory;
     }
 
     @Autowired
-    public String get_businessLine() {
+    public String getbusinessLine() {
         return _businessLine;
     }
 
     @Autowired
-    public void set_businessLine(String _businessLine) {
+    public void setbusinessLine(String _businessLine) {
         this._businessLine = _businessLine;
     }
 
     @Autowired
-    public int get_numEmployee() {
+    public int getnumEmployee() {
         return _numEmployee;
     }
 
     @Autowired
-    public void set_numEmployee(int _numEmployee) {
+    public void setnumEmployee(int _numEmployee) {
         this._numEmployee = _numEmployee;
     }
 
     @Autowired
-    public int get_annualRevenue() {
+    public int getannualRevenue() {
         return _annualRevenue;
     }
 
     @Autowired
-    public void set_annualRevenue(int _annualRevenue) {
+    public void setannualRevenue(int _annualRevenue) {
         this._annualRevenue = _annualRevenue;
     }
 
     @Autowired
-    public String get_fiscalYearEnd() {
+    public String getfiscalYearEnd() {
         return _fiscalYearEnd;
     }
 
     @Autowired
-    public void set_fiscalYearEnd(String _fiscalYearEnd) {
+    public void setfiscalYearEnd(String _fiscalYearEnd) {
         this._fiscalYearEnd = _fiscalYearEnd;
     }
 
     @Autowired
-    public int get_yearEstablished() {
+    public int getyearEstablished() {
         return _yearEstablished;
     }
 
     @Autowired
-    public void set_yearEstablished(int _yearEstablished) {
+    public void setyearEstablished(int _yearEstablished) {
         this._yearEstablished = _yearEstablished;
     }
 
     @Autowired
-    public String get_dunsNumber() {
+    public String getdunsNumber() {
         return _dunsNumber;
     }
 
     @Autowired
-    public void set_dunsNumber(String _dunsNumber) {
+    public void setdunsNumber(String _dunsNumber) {
         this._dunsNumber = _dunsNumber;
     }
 
     @Autowired
-    public String get_stockTicker() {
+    public String getstockTicker() {
         return _stockTicker;
     }
 
     @Autowired
-    public void set_stockTicker(String _stockTicker) {
+    public void setstockTicker(String _stockTicker) {
         this._stockTicker = _stockTicker;
     }
 
     @Autowired
-    public String get_sicCode() {
+    public String getsicCode() {
         return _sicCode;
     }
 
     @Autowired
-    public void set_sicCode(String _sicCode) {
+    public void setsicCode(String _sicCode) {
         this._sicCode = _sicCode;
     }
 
     @Autowired
-    public String get_firstName() {
+    public String getfirstName() {
         return _firstName;
     }
 
     @Autowired
-    public void set_firstName(String _firstName) {
+    public void setfirstName(String _firstName) {
         this._firstName = _firstName;
     }
 
     @Autowired
-    public String get_lastName() {
+    public String getlastName() {
         return _lastName;
     }
 
     @Autowired
-    public void set_lastName(String _lastName) {
+    public void setlastName(String _lastName) {
         this._lastName = _lastName;
     }
 
     @Autowired
-    public String get_middleName() {
+    public String getmiddleName() {
         return _middleName;
     }
 
     @Autowired
-    public void set_middleName(String _middleName) {
+    public void setmiddleName(String _middleName) {
         this._middleName = _middleName;
     }
 
     @Autowired
-    public String get_sex() {
+    public String getsex() {
         return _sex;
     }
 
     @Autowired
-    public void set_sex(String _sex) {
+    public void setsex(String _sex) {
         this._sex = _sex;
     }
 
     @Autowired
-    public String get_birthDate() {
+    public String getbirthDate() {
         return _birthDate;
     }
 
     @Autowired
-    public void set_birthDate(String _birthDate) {
+    public void setbirthDate(String _birthDate) {
         this._birthDate = _birthDate;
     }
 
     @Autowired
-    public String get_title() {
+    public String gettitle() {
         return _title;
     }
 
     @Autowired
-    public void set_title(String _title) {
+    public void settitle(String _title) {
         this._title = _title;
     }
 
     @Autowired
-    public String get_jobTitle() {
+    public String getjobTitle() {
         return _jobTitle;
     }
 
     @Autowired
-    public void set_jobTitle(String _jobTitle) {
+    public void setjobTitle(String _jobTitle) {
         this._jobTitle = _jobTitle;
     }
 
     @Autowired
-    public String get_department() {
+    public String getdepartment() {
         return _department;
     }
 
     @Autowired
-    public void set_department(String _department) {
+    public void setdepartment(String _department) {
         this._department = _department;
     }
 
     @Autowired
-    public String get_responsibility() {
+    public String getresponsibility() {
         return _responsibility;
     }
 
     @Autowired
-    public void set_responsibility(String _responsibility) {
+    public void setresponsibility(String _responsibility) {
         this._responsibility = _responsibility;
     }
 
     @Autowired
-    public String get_decisionMaker() {
+    public String getdecisionMaker() {
         return _decisionMaker;
     }
 
     @Autowired
-    public void set_decisionMaker(String _decisionMaker) {
+    public void setdecisionMaker(String _decisionMaker) {
         this._decisionMaker = _decisionMaker;
     }
 
     @Autowired
-    public String get_leadSource() {
+    public String getleadSource() {
         return _leadSource;
     }
 
     @Autowired
-    public void set_leadSource(String _leadSource) {
+    public void setleadSource(String _leadSource) {
         this._leadSource = _leadSource;
     }
 
     @Autowired
-    public String get_leadSourceDetail() {
+    public String getleadSourceDetail() {
         return _leadSourceDetail;
     }
 
     @Autowired
-    public void set_leadSourceDetail(String _leadSourceDetail) {
+    public void setleadSourceDetail(String _leadSourceDetail) {
         this._leadSourceDetail = _leadSourceDetail;
     }
 
     @Autowired
-    public String get_arFlag() {
+    public String getarFlag() {
         return _arFlag;
     }
 
     @Autowired
-    public void set_arFlag(String _arFlag) {
+    public void setarFlag(String _arFlag) {
         this._arFlag = _arFlag;
     }
 
     @Autowired
-    public int get_arBillingAddrId() {
+    public int getarBillingAddrId() {
         return _arBillingAddrId;
     }
 
     @Autowired
-    public void set_arBillingAddrId(int _arBillingAddrId) {
+    public void setarBillingAddrId(int _arBillingAddrId) {
         this._arBillingAddrId = _arBillingAddrId;
     }
 
     @Autowired
-    public int get_portraitFileId() {
+    public int getportraitFileId() {
         return _portraitFileId;
     }
 
     @Autowired
-    public void set_portraitFileId(int _portraitFileId) {
+    public void setportraitFileId(int _portraitFileId) {
         this._portraitFileId = _portraitFileId;
     }
 
     @Autowired
-    public int get_leadId() {
+    public int getleadId() {
         return _leadId;
     }
 
     @Autowired
-    public void set_leadId(int _leadId) {
+    public void setleadId(int _leadId) {
         this._leadId = _leadId;
     }
 
-    public String get_impSessionName() {
+    public String getimpSessionName() {
         return _impSessionName;
     }
 
-    public void set_impSessionName(String _impSessionName) {
+    public void setimpSessionName(String _impSessionName) {
         this._impSessionName = _impSessionName;
     }
 
-    public String get_donotMail() {
+    public String getdonotMail() {
         return _donotMail;
     }
 
-    public void set_donotMail(String _donotMail) {
+    public void setdonotMail(String _donotMail) {
         this._donotMail = _donotMail;
     }
 
-    public String get_donotCall() {
+    public String getdonotCall() {
         return _donotCall;
     }
 
-    public void set_donotCall(String _donotCall) {
+    public void setdonotCall(String _donotCall) {
         this._donotCall = _donotCall;
     }
 
-    public String get_relCompanyName() {
+    public String getrelCompanyName() {
         return _relCompanyName;
     }
 
-    public void set_relCompanyName(String _relCompanyName) {
+    public void setrelCompanyName(String _relCompanyName) {
         this._relCompanyName = _relCompanyName;
     }
 
-    public int get_relCompanyId() {
+    public int getrelCompanyId() {
         return _relCompanyId;
     }
 
-    public void set_relCompanyId(int _relCompanyId) {
+    public void setrelCompanyId(int _relCompanyId) {
         this._relCompanyId = _relCompanyId;
     }
 
-    public String get_externalRefkey() {
+    public String getexternalRefkey() {
         return _externalRefkey;
     }
 
 
     @Autowired
-    public void set_externalRefkey(String _externalRefkey) {
+    public void setexternalRefkey(String _externalRefkey) {
         this._externalRefkey = _externalRefkey;
     }
 
     @Autowired
-    public String get_lastCallDate() {
+    public String getlastCallDate() {
         return _lastCallDate;
     }
 
     @Autowired
-    public void set_lastCallDate(String _lastCallDate) {
+    public void setlastCallDate(String _lastCallDate) {
         this._lastCallDate = _lastCallDate;
     }
 
     @Autowired
-    public String get_lastEmailDate() {
+    public String getlastEmailDate() {
         return _lastEmailDate;
     }
 
     @Autowired
-    public void set_lastEmailDate(String _lastEmailDate) {
+    public void setlastEmailDate(String _lastEmailDate) {
         this._lastEmailDate = _lastEmailDate;
     }
 
     @Autowired
-    public int get_processStepTxId() {
+    public int getprocessStepTxId() {
         return _processStepTxId;
     }
 
     @Autowired
-    public void set_processStepTxId(int _processStepTxId) {
+    public void setprocessStepTxId(int _processStepTxId) {
         this._processStepTxId = _processStepTxId;
     }
 
     @Autowired
-    public String get_processStepDue() {
+    public String getprocessStepDue() {
         return _processStepDue;
     }
 
     @Autowired
-    public void set_processStepDue(String _processStepDue) {
+    public void setprocessStepDue(String _processStepDue) {
         this._processStepDue = _processStepDue;
     }
 
     @Autowired
-    public int get_private() {
+    public int getprivate() {
         return _private;
     }
 
     @Autowired
-    public void set_private(int _private) {
+    public void setprivate(int _private) {
         this._private = _private;
     }
 
     @Autowired
-    public int get_hasTags() {
+    public int gethasTags() {
         return _hasTags;
     }
 
     @Autowired
-    public void set_hasTags(int _hasTags) {
+    public void sethasTags(int _hasTags) {
         this._hasTags = _hasTags;
     }
 
     @Autowired
-    public String get_tags() {
+    public String gettags() {
         return _tags;
     }
 
     @Autowired
-    public void set_tags(String _tags) {
+    public void settags(String _tags) {
         this._tags = _tags;
     }
 
     @Autowired
-    public String get_nextCallDate() {
+    public String getnextCallDate() {
         return _nextCallDate;
     }
 
     @Autowired
-    public void set_nextCallDate(String _nextCallDate) {
+    public void setnextCallDate(String _nextCallDate) {
         this._nextCallDate = _nextCallDate;
     }
 
     @Autowired
-    public String get_nextCallTime() {
+    public String getnextCallTime() {
         return _nextCallTime;
     }
 
     @Autowired
-    public void set_nextCallTime(String _nextCallTime) {
+    public void setnextCallTime(String _nextCallTime) {
         this._nextCallTime = _nextCallTime;
     }
 
     @Autowired
-    public String get_nextCallGoal() {
+    public String getnextCallGoal() {
         return _nextCallGoal;
     }
 
     @Autowired
-    public void set_nextCallGoal(String _nextCallGoal) {
+    public void setnextCallGoal(String _nextCallGoal) {
         this._nextCallGoal = _nextCallGoal;
     }
 
     @Autowired
-    public String get_nextCallNote() {
+    public String getnextCallNote() {
         return _nextCallNote;
     }
 
     @Autowired
-    public void set_nextCallNote(String _nextCallNote) {
+    public void setnextCallNote(String _nextCallNote) {
         this._nextCallNote = _nextCallNote;
     }
 
     @Autowired
-    public String get_externalPartnerId() {
+    public String getexternalPartnerId() {
         return _externalPartnerId;
     }
 
     @Autowired
-    public void set_externalPartnerId(String _externalPartnerId) {
+    public void setexternalPartnerId(String _externalPartnerId) {
         this._externalPartnerId = _externalPartnerId;
     }
 
@@ -620,67 +632,67 @@ public class CustomerBO  {
     }
 
     @Autowired
-    public void set_bSkipGcalSync(boolean _bSkipGcalSync) {
+    public void setbSkipGcalSync(boolean _bSkipGcalSync) {
         this._bSkipGcalSync = _bSkipGcalSync;
     }
 
     @Autowired
-    public int get_nextCallUserid() {
+    public int getnextCallUserid() {
         return _nextCallUserid;
     }
 
     @Autowired
-    public void set_nextCallUserid(int _nextCallUserid) {
+    public void setnextCallUserid(int _nextCallUserid) {
         this._nextCallUserid = _nextCallUserid;
     }
 
     @Autowired
-    public String get_companyName() {
+    public String getcompanyName() {
         return _companyName;
     }
 
     @Autowired
-    public void set_companyName(String _companyName) {
+    public void setcompanyName(String _companyName) {
         this._companyName = _companyName;
     }
 
     @Autowired
-    public String get_accessKey() {
+    public String getaccessKey() {
         return _accessKey;
     }
 
     @Autowired
-    public void set_accessKey(String _accessKey) {
+    public void setaccessKey(String _accessKey) {
         this._accessKey = _accessKey;
     }
 
     @Autowired
-    public Hashtable get_hashtableParams() {
+    public Hashtable gethashtableParams() {
         return _hashtableParams;
     }
 
     @Autowired
-    public void set_hashtableParams(Hashtable _hashtableParams) {
+    public void sethashtableParams(Hashtable _hashtableParams) {
         this._hashtableParams = _hashtableParams;
     }
 
     @Autowired
-    public String get_longStrFieldH() {
+    public String getlongStrFieldH() {
         return _longStrFieldH;
     }
 
     @Autowired
-    public void set_longStrFieldH(String _longStrFieldH) {
+    public void setlongStrFieldH(String _longStrFieldH) {
         this._longStrFieldH = _longStrFieldH;
     }
 
     @Autowired
-    public String get_googleContactId() {
+    public String getgoogleContactId() {
         return _googleContactId;
     }
 
     @Autowired
-    public void set_googleContactId(String _googleContactId) {
+    public void setgoogleContactId(String _googleContactId) {
         this._googleContactId = _googleContactId;
     }
     @Override
@@ -743,5 +755,13 @@ public class CustomerBO  {
                 ", _longStrFieldH='" + _longStrFieldH + '\'' +
                 ", _googleContactId='" + _googleContactId + '\'' +
                 '}';
+    }
+
+    public Date getlastUpdateDate() {
+        return _lastUpdateDate;
+    }
+
+    public void setlastUpdateDate(Date _lastUpdateDate) {
+        this._lastUpdateDate = _lastUpdateDate;
     }
 }

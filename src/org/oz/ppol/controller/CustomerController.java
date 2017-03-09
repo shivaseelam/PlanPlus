@@ -6,6 +6,17 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.oz.ppol.bo.customer.CustomerBO;
 import org.oz.ppol.dto.CalApptDTO;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 import org.oz.ppol.dto.customerdto.CustomerDTO;
 import org.oz.ppol.service.customerservice.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,7 +41,7 @@ import java.util.Locale;
  * Created by shiva9 on 2/7/2017.
  */
 
-@Controller
+/*@Controller*/
 @RestController
 public class CustomerController {
 

@@ -33,15 +33,17 @@
 <thead>
     <tr>
         <td><a href="/displayForm">Create_Customer</a> </td>
+        <%--<td><a class="toggle-vis" data-column="1">FirstName</a> </td>--%>
     </tr>
-    <tr>
+
+    <%--<tr>
         <th style=" background-color: darkorange;">CustomerId</th>
         <th style=" background-color: darkorange;">FirstName</th>
         <th style=" background-color: darkorange;">LastName</th>
         <th style=" background-color: darkorange;">LastName</th>
         <th style=" background-color: darkorange;">Edit/Delete</th>
 
-    </tr>
+    </tr>--%>
 
     </thead>
 
@@ -73,15 +75,47 @@
         var table = $('#example').DataTable( {
 
             "aaData": data,
+
+             "sTitle" : {"sTitle":"CustomerNumber","sTitle":"DisplayName","sTitle":"Edit/Delete"},
             "aoColumns": [
-                { "mData":"customerId"},
+           /* "aoColumnDefs": [*/
+                /*{ "mData":"customerId"},
                 { "mData": "firstName"},
                 { "mData": "lastName"},
-                { "mData": "lastName"},
+                { "mData": "lastName"},*/
+                /*{
+                    mData : "displayName",
+                    sTitle : "column1",
+                   /!*"columns":[{sTitle: "DisplayName"},{sTitle:"CustomerNumber"}],
+                    "render":function (mData,type,full,meta) {
+                        /!*console.log(mData+" "+type+""+full+""+meta);*!/
+                        return  mData;
+                    }*!/
+                },*/
+                /*{
+                    mData : "customerNumber",
+                    sTitle : "column2",
+                    /!*"columns":[{sTitle: "DisplayName"},{sTitle:"CustomerNumber"}],
+                     "render":function (mData,type,full,meta) {
+                     /!*console.log(mData+" "+type+""+full+""+meta);*!/
+                     return  mData;
+                     }*!/
+                },*/
+                { "title": "My column title" },
+                { "title": "My column title1" },
+                /*{ "mData": "customerNumber",
+                   sTitle: "CustomerNumber",
+                    "render":function (mData,type,full,meta) {
+                        console.log(mData+" "+type+""+full+""+meta);
+                        return  mData;
+                    }
 
-                {
-                    "mData": "customerId",
-                    /*className: "btnE btnD",*/
+                },*/
+
+                /*{
+                    "mData": "customerNumber",
+                    /!*className: "btnE btnD",*!/
+                    sTitle :"Edit/Delete",
 
                     //defaultContent: '<a href="edit_customers/{_customerId"}" class="editor_edit">Edit</a> / <a href="" class="editor_remove">Delete</a>'
                     //defaultContent: '<a href="edit_customers/{_customerId"}" class="editor_edit">Edit</a> / <a href="" class="editor_remove">Delete</a>'
@@ -90,7 +124,7 @@
                         return '<a href="edit_customers/' + mData + '" class="editor_edit"><img src="resources/images/edit.gif"></a> <a  href="delete_customer/' + mData + '"class="editor_delete"><img src="resources/images/delete.gif"></a>';
                         //return '<img src="resources/images/edit.gif"> <img src="resources/images/delete.gif">';
                     }
-                }
+                }*/
 
 
             ],
@@ -99,8 +133,24 @@
             "pageLength":10,
             "ordering":true,
             "order":[0,"asc"]
-        });
+        } );
 
+        /*var active = table
+                .columns( function ( idx, data, node ) {
+                    return $.inArray( 'Active', data ) !== -1 ?
+                            true : false;
+                } )
+                .data();*/
+
+        $('a.toggle-vis').on( 'click', function (e) {
+            e.preventDefault();
+
+            // Get the column API object
+            var column = table.column( $(this).attr('data-column') );
+
+            // Toggle the visibility
+            column.visible( ! column.visible() );
+        } );
         /*$('#example').DataTable( {
             data:           data,
             deferRender:    true,

@@ -44,12 +44,12 @@ public class CustomerServiceImpl implements CustomerService {
         CustomerDTO customerDTO =new CustomerDTO();
 
         customerBO = customerDAO.getCustomerDetail(customerId);
-        customerDTO.setcustomerId(customerBO.get_customerId());
-        customerDTO.setfirstName(customerBO.get_firstName());
-        customerDTO.setlastName(customerBO.get_lastName());
-        customerDTO.setcompanyName(customerBO.get_companyName());
-        customerDTO.setannualRevenue(customerBO.get_annualRevenue());
-        customerDTO.setdisplayName(customerBO.get_displayName());
+        customerDTO.setcustomerId(customerBO.getcustomerId());
+        customerDTO.setfirstName(customerBO.getfirstName());
+        customerDTO.setlastName(customerBO.getlastName());
+        customerDTO.setcompanyName(customerBO.getcompanyName());
+        customerDTO.setannualRevenue(customerBO.getannualRevenue());
+        customerDTO.setdisplayName(customerBO.getdisplayName());
         return customerDTO;
     }
 
@@ -67,14 +67,19 @@ public class CustomerServiceImpl implements CustomerService {
             List<CustomerDTO> customerDTOs = null;
 
         CustomerDTO customerDTO = null;
-        customerBOs = customerDAO.getAllCustomerDetails();
+        //customerBOs = customerDAO.getAllCustomerDetails();
+        customerBOs = customerDAO.getAllCustomersByView();
         customerDTOs = new ArrayList<>();
         for (CustomerBO customerBO:customerBOs)
         {
              customerDTO=new CustomerDTO();
-            customerDTO.setcustomerId(customerBO.get_customerId());
-            customerDTO.setfirstName(customerBO.get_firstName());
-            customerDTO.setlastName(customerBO.get_lastName());
+            customerDTO.setcustomerId(customerBO.getcustomerId());
+            customerDTO.setfirstName(customerBO.getfirstName());
+            customerDTO.setlastName(customerBO.getlastName());
+            customerDTO.setdisplayName(customerBO.getdisplayName());
+            customerDTO.setcustomerNumber(customerBO.getcustomerNumber());
+            customerDTO.setcustomerCategory(customerBO.getcustomerCategory());
+
            customerDTOs.add(customerDTO);
         }
         return  customerDTOs;

@@ -2,6 +2,7 @@
 
 import org.oz.ppol.bo.customer.CustomerBO;
 import org.oz.ppol.dto.customerdto.CustomerDTO;
+import org.oz.ppol.perzpageview.CustomerUtil;
 import org.springframework.jdbc.core.support.JdbcDaoSupport;
 
 import java.sql.Types;
@@ -14,7 +15,8 @@ import java.util.Map;
  */
 public class CustomerDAOImpl  extends  JdbcDaoSupport implements CustomerDAO {
 
-    private static final String GET_ALL_CUSTOMERS= "SELECT CUSTOMER_ID,FIRST_NAME,LAST_NAME FROM   SLS_CUSTOMER WHERE ACTIVE_STATUS='Y'  ; ";
+    //private static final String GET_ALL_CUSTOMERS= "SELECT CUSTOMER_ID,FIRST_NAME,LAST_NAME FROM   SLS_CUSTOMER WHERE ACTIVE_STATUS='Y'  ; ";
+    private static final String GET_ALL_CUSTOMERS= "SELECT CUSTOMER_ID,FIRST_NAME,LAST_NAME,CUSTOMER_NUMBER,DISPLAY_NAME,CUSTOMER_CATEGORY  FROM   SLS_CUSTOMER WHERE ACTIVE_STATUS='Y'  ; ";
     private static final String GET_CUSTOMER_ID= "SELECT * FROM SLS_CUSTOMER WHERE   ACTIVE_STATUS='Y' AND CUSTOMER_ID = ?";
     private static final String DELETE_CUSTOMER= "UPDATE SLS_CUSTOMER SET ACTIVE_STATUS='Y' WHERE CUSTOMER_ID = ?";
 
@@ -37,9 +39,12 @@ public class CustomerDAOImpl  extends  JdbcDaoSupport implements CustomerDAO {
         for(Map row: customerBOs)
         {
             CustomerBO customerBO = new CustomerBO();
-            customerBO.set_customerId((Integer)row.get("CUSTOMER_ID"));
-            customerBO.set_firstName((String) row.get("FIRST_NAME"));
-            customerBO.set_lastName((String)row.get("LAST_NAME"));
+            customerBO.setcustomerId((Integer)row.get("CUSTOMER_ID"));
+            customerBO.setfirstName((String) row.get("FIRST_NAME"));
+            customerBO.setlastName((String)row.get("LAST_NAME"));
+            customerBO.setcustomerNumber((Integer) row.get("CUSTOMER_NUMBER"));
+            customerBO.setdisplayName((String)row.get("DISPLAY_NAME"));
+            customerBO.setcustomerCategory((String)row.get("CUSTOMER_CATEGORY"));
             customers.add(customerBO);
         }
         return  customers;
@@ -51,9 +56,12 @@ public class CustomerDAOImpl  extends  JdbcDaoSupport implements CustomerDAO {
         for(Map row: customerBOs)
         {
             CustomerBO customerBO = new CustomerBO();
-            customerBO.set_customerId((Integer)row.get("CUSTOMER_ID"));
-            customerBO.set_firstName((String) row.get("FIRST_NAME"));
-            customerBO.set_lastName((String)row.get("LAST_NAME"));
+            customerBO.setcustomerId((Integer)row.get("CUSTOMER_ID"));
+            customerBO.setfirstName((String) row.get("FIRST_NAME"));
+            customerBO.setlastName((String)row.get("LAST_NAME"));
+            customerBO.setcustomerNumber((Integer) row.get("CUSTOMER_NUMBER"));
+            customerBO.setdisplayName((String)row.get("DISPLAY_NAME"));
+            customerBO.setcustomerCategory((String)row.get("CUSTOMER_CATEGORY"));
             customers.add(customerBO);
         }
         return  customers;
@@ -115,8 +123,49 @@ public class CustomerDAOImpl  extends  JdbcDaoSupport implements CustomerDAO {
         return bSuccess;
     }
 
+    @Override
+    public String customViewColumns() {
+
+        String perViewCols = "SELECT COLUMN_PARAM FROM FWK_PERZ_VIEW WHERE VIEW_ID=352 AND ACTIVE_STATUS ='Y'";
+
+       String columnNames =  getJdbcTemplate().queryForObject(perViewCols,String.class);
+
+        return columnNames;
+    }
+
+    @Override
+    public List<CustomerBO> getAllCustomersByView() {
+
+        String perzViewColumns = customViewColumns();
+        List<CustomerBO> customer = getAllCustomerDetails();
+        //String GET_CUSTOMER_VIEW ="SELECT "+perzViewColumns+" FROM SLS_CUSTOMER WHERE ACTIVE_STATUS='Y' ";
+
+        List<CustomerBO> customers = new ArrayList<CustomerBO>();
+        //List<Map<String, Object>> customerBOs =getJdbcTemplate().queryForList(GET_CUSTOMER_VIEW);
+
+        for(CustomerBO customerBO1: customer)
+        {
+            CustomerBO customerBO = new CustomerBO();
+            customerBO = CustomerUtil.setValues(customerBO1, perzViewColumns);
+
+            // cust util method
+
+                // cust util method
+           /* customerBO.setcustomerNumber((Integer)row.get());
+            customerBO.setcustomerId((Integer)row.get("CUSTOMER_ID"));
+            customerBO.setfirstName((String) row.get("FIRST_NAME"));
+            customerBO.setlastName((String)row.get("LAST_NAME"));
+            customerBO.setcustomerNumber((Integer) row.get("CUSTOMER_NUMBER"));
+            customerBO.setdisplayName((String)row.get("DISPLAY_NAME"));
+            customerBO.setcustomerCategory((String)row.get("CUSTOMER_CATEGORY"));*/
+            //customerBO.setlastUpdateDate((Date)row.get("LAST_UPDATE_DATE"));
 
 
+            customers.add(customerBO);
+        }
+        return  customers;
+
+    }
 
 
 }

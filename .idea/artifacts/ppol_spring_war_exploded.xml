@@ -17,8 +17,9 @@
           <element id="library" level="project" name="standard" />
           <element id="library" level="project" name="jstl-1.2" />
           <element id="library" level="project" name="com.fasterxml.jackson.core" />
-          <element id="library" level="project" name="jackson-databind-2.2.3" />
           <element id="library" level="project" name="jackson-annotations-2.8.6" />
+          <element id="library" level="project" name="com.fasterxml.jackson.core1" />
+          <element id="library" level="project" name="jackson-databind-2.2.3" />
         </element>
       </element>
     </root>
