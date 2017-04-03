@@ -124,9 +124,9 @@ public class CustomerDAOImpl  extends  JdbcDaoSupport implements CustomerDAO {
     }
 
     @Override
-    public String customViewColumns() {
+    public String getCustomViewColumns(int viewId) {
 
-        String perViewCols = "SELECT COLUMN_PARAM FROM FWK_PERZ_VIEW WHERE VIEW_ID=352 AND ACTIVE_STATUS ='Y'";
+        String perViewCols = "SELECT COLUMN_PARAM FROM FWK_PERZ_VIEW WHERE VIEW_ID="+viewId+" AND ACTIVE_STATUS ='Y'";
 
        String columnNames =  getJdbcTemplate().queryForObject(perViewCols,String.class);
 
@@ -136,8 +136,8 @@ public class CustomerDAOImpl  extends  JdbcDaoSupport implements CustomerDAO {
     @Override
     public List<CustomerBO> getAllCustomersByView() {
 
-        String perzViewColumns = customViewColumns();
-        List<CustomerBO> customer = getAllCustomerDetails();
+        String perzViewColumns = getCustomViewColumns(298);
+        List<CustomerBO> customer =  getAllCustomerDetails();
         //String GET_CUSTOMER_VIEW ="SELECT "+perzViewColumns+" FROM SLS_CUSTOMER WHERE ACTIVE_STATUS='Y' ";
 
         List<CustomerBO> customers = new ArrayList<CustomerBO>();

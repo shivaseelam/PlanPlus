@@ -94,7 +94,7 @@
 
                     <tr>
                         <li class="default"> <label>Job Title:</label>
-                            <form:input path="jobTitle"/>
+                            <form:input path="displayName"/>
                         </li>
                     </tr>
 

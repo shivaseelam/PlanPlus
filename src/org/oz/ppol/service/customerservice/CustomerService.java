@@ -15,5 +15,7 @@ public interface CustomerService {
     public boolean updateCusotmer(CustomerDTO customerDTO);
     public CustomerDTO getCustomerId(int customerId);
     public boolean deleteCustomer(int customerId);
-    public List<CustomerDTO> getAllCustomers();
+//    public List<CustomerDTO> getAllCustomers();
+     public List getAllCustomers();
+    public String getCustomViewHeaders(int viewId);
 }

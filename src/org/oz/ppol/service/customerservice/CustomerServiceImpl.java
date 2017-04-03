@@ -1,8 +1,10 @@
 package org.oz.ppol.service.customerservice;
 
+import org.json.simple.JSONArray;
 import org.oz.ppol.bo.customer.CustomerBO;
 import org.oz.ppol.dao.customerdao.CustomerDAO;
 import org.oz.ppol.dto.customerdto.CustomerDTO;
+import org.oz.ppol.perzpageview.CustomerUtil;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -62,33 +64,46 @@ public class CustomerServiceImpl implements CustomerService {
 
 
     @Override
-    public List<CustomerDTO> getAllCustomers() {
+    public List getAllCustomers() {
             List<CustomerBO> customerBOs = null;
-            List<CustomerDTO> customerDTOs = null;
+            List customerDTOs = null;
 
         CustomerDTO customerDTO = null;
-        //customerBOs = customerDAO.getAllCustomerDetails();
-        customerBOs = customerDAO.getAllCustomersByView();
-        customerDTOs = new ArrayList<>();
+        customerBOs = customerDAO.getAllCustomerDetails();
+        //customerBOs = customerDAO.getAllCustomersByView();
+        //customerDTOs = new ArrayList<>();
+        JSONArray customerArray = new JSONArray();
         for (CustomerBO customerBO:customerBOs)
         {
-             customerDTO=new CustomerDTO();
-            customerDTO.setcustomerId(customerBO.getcustomerId());
+
+             //customerDTO=new CustomerDTO();
+            //CustomerBO customerBO_DATA = new CustomerBO();
+             ;
+            /*customerDTO.setcustomerId(customerBO.getcustomerId());
             customerDTO.setfirstName(customerBO.getfirstName());
             customerDTO.setlastName(customerBO.getlastName());
             customerDTO.setdisplayName(customerBO.getdisplayName());
             customerDTO.setcustomerNumber(customerBO.getcustomerNumber());
-            customerDTO.setcustomerCategory(customerBO.getcustomerCategory());
+            customerDTO.setcustomerCategory(customerBO.getcustomerCategory());*/
 
-           customerDTOs.add(customerDTO);
+            customerArray.add(CustomerUtil.setValues3(customerBO, getCustomViewHeaders(352)));
         }
-        return  customerDTOs;
+        return  customerArray;
+    }
+
+    @Override
+    public String getCustomViewHeaders(int viewId) {
+
+        return customerDAO.getCustomViewColumns(viewId);
     }
 
     public String toString() {
         return "CustomerServiceImpl [getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()="
                 + super.toString() + "]";
     }
+
+
+
 
 
 

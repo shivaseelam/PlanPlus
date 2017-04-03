@@ -2,8 +2,11 @@ package org.oz.ppol.controller;
 
 
 
+import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
 import org.oz.ppol.bo.customer.CustomerBO;
 import org.oz.ppol.dto.CalApptDTO;
 
@@ -12,6 +15,7 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.apache.commons.collections.map.MultiValueMap;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -34,8 +38,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.util.List;
-import java.util.Locale;
+import java.util.*;
 
 /**
  * Created by shiva9 on 2/7/2017.
@@ -89,15 +92,135 @@ public class CustomerController {
 
 
 
-    @RequestMapping("/list_customers")
+
+    @RequestMapping(value="/list_customers",method = RequestMethod.GET)
     public ModelAndView viewCustomers(){
 
 
+        //String columnHeaders ="";
+        String columnHeaders1 ="";
+        //columnHeaders = customerService.getCustomViewHeaders(352);
+        //String[] csvValues = columnHeaders.split(",");
         String jsonInString = getString();
 
+        ObjectMapper mapper = new ObjectMapper();
 
-        return new ModelAndView("list_customers","lstCustomers",jsonInString);
+        //Map<String,Object> columnMap = new HashMap<>();
+
+        //String columns = " COLUMNS :"+viewCustomerHeaders();
+        JSONObject jsonData = new JSONObject();
+        JSONArray dataArray = new JSONArray();
+
+        jsonData.put("COLUMNS",viewCustomerHeaders());
+        jsonData.put("DATA",customerService.getAllCustomers());
+        dataArray.add(jsonData);
+
+
+
+        //List columnMap =new ArrayList();
+        //columnMap.add(columns);
+
+       /* try {
+            //columnHeaders=  mapper.writeValueAsString(csvValues);
+            //columnMap.put("COLUMNS",viewCustomerHeaders());
+            //columnMap.put("DATA",jsonInString);
+            columnHeaders1 =mapper.writeValueAsString(columnMap);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }*/
+
+
+
+        return new ModelAndView("list_customers","lstCustomers",dataArray.toJSONString() );
     }
+
+
+
+    public JSONArray viewCustomerHeaders()
+    {
+        String columnHeaders ="";
+        columnHeaders = customerService.getCustomViewHeaders(298);
+        String[] csvValues = columnHeaders.split(",");
+       // Map<String,Object> columnMap = new HashMap<>();
+        //MultiValueMap columnMap = new MultiValueMap();
+        /*columnMap.put("title1",csvValues[0]);
+        columnMap.put("title2",csvValues[1]);
+        columnMap.put("title3",csvValues[2]);*/
+        //List columnMap = new ArrayList();
+        JSONArray list = new JSONArray();
+        //JSONObject headers =new JSONObject(); ;
+        //JSONObject[] headers = new JSONObject[3]; ;
+        //String  custId = "{'title' :'CUSTOMERID'}";
+        JSONObject jsonObject;
+        //new JSONObject().put(headers.put("title_01","CUSTOMERID"));
+        for(int i = 0 ;i < csvValues.length;i++)
+        {
+            /*String  keyValue = "{ 'title' :'"+csvValues[i]+"'}";
+            columnMap.add(keyValue);*/
+            //columnMap.put("title_"+i,csvValues[i]);
+            jsonObject = new JSONObject();
+            jsonObject.put("title",csvValues[i]);
+
+            list.add(jsonObject);
+
+
+
+        }
+
+
+
+
+        System.out.print(list);
+
+       /* ObjectMapper mapper = new ObjectMapper();
+
+
+        try {
+            columnHeaders=  mapper.writeValueAsString(columnMap);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }*/
+        return  list;
+    }
+
+   /* @RequestMapping(value="/list_customers_headers",method = RequestMethod.GET)
+    public @ResponseBody String viewCustomersHeaders(Model model){
+
+
+        String columnHeaders ="";
+         columnHeaders = customerService.getCustomViewHeaders(352);
+        String[] csvValues = columnHeaders.split(",");
+          *//*Map<String,Object> columnMap = new HashMap<>();
+                columnMap.put("sTitle",csvValues[0]);
+                columnMap.put("sTitle1",csvValues[1]);
+                columnMap.put("sTitle2",csvValues[2]);*//*
+
+
+            ObjectMapper mapper = new ObjectMapper();
+
+
+        try {
+            columnHeaders=  mapper.writeValueAsString(csvValues);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        //return new ModelAndView("list_customers","lstCustomers1",columnHeaders);
+       model.addAttribute("list_customers_headers",columnHeaders);
+        return  "jsonTemplate";
+    }*/
+    /*@RequestMapping(value="/list_customers",method = RequestMethod.GET)
+    public ModelAndView viewCustomers(Map<String,Object> modelMap){
+
+
+        String columnHeaders = customerService.getCustomViewHeaders(352);
+        String jsonInString = getString();
+
+        modelMap.put("headers",columnHeaders);
+        modelMap.put("jsonData",jsonInString);
+
+
+        return new ModelAndView("list_customers","lstCustomers",modelMap);
+    }*/
 
     private String getString() {
         List<CustomerDTO> customerDTOs = null;
@@ -114,7 +237,7 @@ public class CustomerController {
     }
 
 
-    @RequestMapping(value="/edit_customers/{id}")
+    @RequestMapping(value="/edit_customers/{id}", method = RequestMethod.GET)
     public ModelAndView editCustomer(@PathVariable("id") int id){
 
         CustomerDTO customerDTO = null;
@@ -159,7 +282,7 @@ public class CustomerController {
         return new ModelAndView("edit_customers","command",customerDTO);
     }
 
-    @RequestMapping(value="/delete_customer/{id}",method = RequestMethod.POST)
+    @RequestMapping(value="/delete_customer/{id}", method = RequestMethod.GET)
     public ModelAndView deleteCustomer(@PathVariable("id") int id){
 
         CustomerDTO customerDTO = null;

@@ -17,7 +17,7 @@ public interface CustomerDAO {
     //public boolean insertCustomerDetail(CustomerBO customerBO);
     public boolean insertCustomerDetail(CustomerDTO customerDTO);
     public boolean deleteCustomerDetail(int customerId);
-    public String customViewColumns();
+    public String getCustomViewColumns(int viewId);
     public List<CustomerBO> getAllCustomersByView();
 
 
