@@ -24,7 +24,7 @@
    <!-- <bean id="listcustomer" class="org.oz.ppol.controller.CustomerController">
         <property name="customerService"  ref="customerService"/>
     </bean>-->
-    <context:component-scan base-package="org.oz.ppol.controller"></context:component-scan>
+    <context:component-scan base-package="org.oz.sppol.controller"></context:component-scan>
 
     <bean id="vr"  class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property  name="prefix" value="/WEB-INF/pages/"/>

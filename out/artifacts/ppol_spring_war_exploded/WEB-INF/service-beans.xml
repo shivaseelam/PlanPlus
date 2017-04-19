@@ -7,10 +7,10 @@
 
 
 
-     <bean id="calApptService" class="org.oz.ppol.service.CalApptServiceImpl">
+     <!--<bean id="calApptService" class="org.oz.sppol.service.CalApptServiceImpl">
          <property name="calApptDAO" ref="calApptDAO"/>
-     </bean>
-    <bean id="customerService" class="org.oz.ppol.service.customerservice.CustomerServiceImpl">
+     </bean>-->
+    <bean id="customerService" class="org.oz.sppol.service.customerservice.CustomerServiceImpl">
          <property name="customerDAO" ref="customerDAO"/>
      </bean>
 

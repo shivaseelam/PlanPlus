@@ -19,15 +19,15 @@
         <property name="dataSource"  ref="dataSource"/>
     </bean>
 
-    <bean id="calApptDAO" class="org.oz.ppol.dao.CalApptDAOImpl">
+  <!--  <bean id="calApptDAO" class="org.oz.sppol.dao.CalApptDAOImpl">
         <property name="jt" ref="template"/>
-    </bean>
-    <bean id="customerDAO" class="org.oz.ppol.dao.customerdao.CustomerDAOImpl">
+    </bean>-->
+    <bean id="customerDAO" class="org.oz.sppol.dao.customerdao.CustomerDAOImpl">
         <property name="dataSource" ref="dataSource"/>
     </bean>
 
 
 
-    <context:component-scan base-package="org.oz.ppol.controller"></context:component-scan>
+    <context:component-scan base-package="org.oz.sppol.controller"></context:component-scan>
 
 </beans>
