@@ -19,6 +19,6 @@ public interface CustomerDAO {
     public boolean deleteCustomerDetail(int customerId);
     public String getCustomViewColumns(int viewId);
     public List<CustomerBO> getAllCustomersByView();
-
+    public int sNumber(String columnName,String tableName);
 
 }

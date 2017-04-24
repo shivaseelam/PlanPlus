@@ -18,4 +18,6 @@ public interface CustomerService {
 //    public List<CustomerDTO> getAllCustomers();
      public List getAllCustomers();
     public String getCustomViewHeaders(int viewId);
+
+    public List getAllCustomersRest();
 }

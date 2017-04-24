@@ -95,8 +95,10 @@ public class CustomerDAOImpl  extends  JdbcDaoSupport implements CustomerDAO {
     @Override
     public boolean insertCustomerDetail(CustomerDTO customerDTO) {
         //String insertSql = "INSERT INTO SLS_CUSTOMER (CUSTOMER_ID,FIRST_NAME,LONGSTR_FIELD_H) VALUES(?,?,?) ";
+        int CUSTOMER_ID1 = sNumber("CUSTOMER_ID","SLS_CUSTOMER");
+
         String insertSql = "INSERT INTO SLS_CUSTOMER (CUSTOMER_ID,FIRST_NAME,LAST_NAME,CUSTOMER_NUMBER,DISPLAY_NAME,CUSTOMER_CATEGORY,LONGSTR_FIELD_H) VALUES(?,?,?,?,?,?,?) ";
-        Object[] params = { customerDTO.getcustomerId(),
+        Object[] params = { CUSTOMER_ID1,
                             customerDTO.getfirstName(),
                 customerDTO.getlastName(),
                 customerDTO.getcustomerNumber(),
@@ -171,6 +173,15 @@ public class CustomerDAOImpl  extends  JdbcDaoSupport implements CustomerDAO {
         }
         return  customers;
 
+    }
+
+    @Override
+    public int sNumber(String columnName, String tableName) {
+
+        String selectQuery = "SELECT MAX("+columnName+") FROM "+tableName;
+        int  seqNum =  getJdbcTemplate().queryForObject(selectQuery,Integer.class);
+
+        return (seqNum+1);
     }
 
 

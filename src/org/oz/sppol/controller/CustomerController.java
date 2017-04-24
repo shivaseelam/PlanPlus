@@ -53,6 +53,7 @@ public class CustomerController {
     private CustomerService customerService;
 
 
+
     /*public void setCustomerService(CustomerService customerService) {
         this.customerService = customerService;
     }*/
@@ -88,6 +89,38 @@ public class CustomerController {
         model.addAttribute("employeeList",jsonInString);
         return "list_customers";
     }*/
+
+
+    /*@GetMapping("/listCustomer")*/
+   /* @RequestMapping(value="/listCustomer",method = RequestMethod.GET,headers="Accept=application/json")
+    public List getListCustomers()
+    {
+        return customerService.getAllCustomersRest();
+    }*/
+
+    //@RequestMapping(value = "/listCustomers")
+    /*public String getAllCustomerJSON(Model model)
+    {
+
+
+        List<CustomerDTO> customerDTOs = null;
+        customerDTOs=customerService.getAllCustomersRest();
+        ObjectMapper mapper = new ObjectMapper();
+
+        String jsonInString = null;
+        try {
+            jsonInString = mapper.writeValueAsString(customerDTOs);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return jsonInString;
+
+    }*/
+    @RequestMapping(value = "/listCustomers")
+    public List getAllCustomerJSON(Model model)
+    {
+        return customerService.getAllCustomersRest();
+    }
 
 
 

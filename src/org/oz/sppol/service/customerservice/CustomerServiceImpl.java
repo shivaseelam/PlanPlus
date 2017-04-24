@@ -97,6 +97,31 @@ public class CustomerServiceImpl implements CustomerService {
         return customerDAO.getCustomViewColumns(viewId);
     }
 
+    @Override
+    public List getAllCustomersRest() {
+        List<CustomerBO> customerBOs = null;
+        List customerDTOs = null;
+
+        CustomerDTO customerDTO = null;
+        customerBOs = customerDAO.getAllCustomerDetails();
+        customerDTOs=new ArrayList();
+        for (CustomerBO customerBO:customerBOs)
+        {
+
+            customerDTO=new CustomerDTO();
+
+            customerDTO.setcustomerId(customerBO.getcustomerId());
+            customerDTO.setfirstName(customerBO.getfirstName());
+            customerDTO.setlastName(customerBO.getlastName());
+            customerDTO.setdisplayName(customerBO.getdisplayName());
+            customerDTO.setcustomerNumber(customerBO.getcustomerNumber());
+            customerDTO.setcustomerCategory(customerBO.getcustomerCategory());
+
+            customerDTOs.add(customerDTO);
+        }
+        return  customerDTOs;
+    }
+
     public String toString() {
         return "CustomerServiceImpl [getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()="
                 + super.toString() + "]";
