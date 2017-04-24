@@ -109,8 +109,8 @@ public class CustomerUtil {
             //}
 
         }
-        String edit_delete = "<a href=edit_customers/"+customerBO.getcustomerId()+ " class=editor_edit><img src=resources/images/edit.gif></a>"+
-                "<a  href=delete_customer/"+customerBO.getcustomerId()+" class=editor_delete> <img src=resources/images/delete.gif></a>";
+        String edit_delete = "<a href=edit_customers/id="+customerBO.getcustomerId()+ " class=editor_edit><img src=resources/images/edit.gif title=Edit></a>"+
+                "<a  href=delete_customer/"+customerBO.getcustomerId()+" class=editor_delete> <img src=resources/images/delete.gif title=Delete></a>";
         customerBO1.add(edit_delete);
             return customerBO1;
     }

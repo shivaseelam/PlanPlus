@@ -277,7 +277,7 @@ public class CustomerController {
     }
 
 
-    @RequestMapping(value="/edit_customers/{id}", method = RequestMethod.GET)
+    @RequestMapping(value="/edit_customers/id={id}", method = RequestMethod.GET)
     public ModelAndView editCustomer(@PathVariable("id") int id){
 
         CustomerDTO customerDTO = null;
