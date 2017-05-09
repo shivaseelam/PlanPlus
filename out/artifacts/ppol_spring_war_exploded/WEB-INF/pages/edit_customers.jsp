@@ -111,16 +111,6 @@
 
     </div>
 </form:form>
-<script>
-    $(function() {
 
-
-
-        $( "#cols,#colss" ).sortable({
-            placeholder : "highlight"
-
-        });
-    });
-</script>
 </body>
 </html>

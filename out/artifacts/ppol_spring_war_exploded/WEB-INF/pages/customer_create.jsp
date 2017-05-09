@@ -83,10 +83,10 @@
         <div id="rowss" class="pull-right">
             <div id="colss" class="paddingright">
                 <table>
-                    <tr>
+                   <%-- <tr>
                         <li class="default"><label>Customer Id:</label>
                             <form:input path="customerId" /></li>
-                    </tr>
+                    </tr>--%>
                     <tr>
                         <li class="default"><label>Customer Number:</label>
                             <form:input path="customerNumber"/></li>

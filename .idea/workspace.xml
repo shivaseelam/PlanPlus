@@ -2,36 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="774ccb6b-74da-4e26-b8a4-ee69115063d7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/jackson-core-2.8.6.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/jackson-databind-2.8.6.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jackson_annotations_2_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jackson_core_2_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jackson_core_2_8_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jackson_databind_2_8_6.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/com_fasterxml_jackson_core.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/com_fasterxml_jackson_databind.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jackson-databind-2.2.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ppol_spring_war_exploded/WEB-INF/lib/com.fasterxml.jackson.core.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ppol_spring_war_exploded/WEB-INF/lib/com.fasterxml.jackson.databind.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ppol_spring_war_exploded/WEB-INF/lib/jackson-databind-2.2.3.jar" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/pages/customer_ng.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/pages/list_customers_ ng.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/css/app.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/js/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/js/user_controller.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/js/user_service.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ppol_spring_war_exploded/WEB-INF/classes/org/oz/sppol/controller/CustomerController.class" afterPath="$PROJECT_DIR$/out/artifacts/ppol_spring_war_exploded/WEB-INF/classes/org/oz/sppol/controller/CustomerController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ppol_spring_war_exploded/WEB-INF/classes/org/oz/sppol/dao/customerdao/CustomerDAO.class" afterPath="$PROJECT_DIR$/out/artifacts/ppol_spring_war_exploded/WEB-INF/classes/org/oz/sppol/dao/customerdao/CustomerDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ppol_spring_war_exploded/WEB-INF/classes/org/oz/sppol/dao/customerdao/CustomerDAOImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/ppol_spring_war_exploded/WEB-INF/classes/org/oz/sppol/dao/customerdao/CustomerDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ppol_spring_war_exploded/WEB-INF/classes/org/oz/sppol/service/customerservice/CustomerService.class" afterPath="$PROJECT_DIR$/out/artifacts/ppol_spring_war_exploded/WEB-INF/classes/org/oz/sppol/service/customerservice/CustomerService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ppol_spring_war_exploded/WEB-INF/classes/org/oz/sppol/service/customerservice/CustomerServiceImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/ppol_spring_war_exploded/WEB-INF/classes/org/oz/sppol/service/customerservice/CustomerServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ppol_spring/org/oz/sppol/controller/CustomerController.class" afterPath="$PROJECT_DIR$/out/production/ppol_spring/org/oz/sppol/controller/CustomerController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ppol_spring/org/oz/sppol/dao/customerdao/CustomerDAO.class" afterPath="$PROJECT_DIR$/out/production/ppol_spring/org/oz/sppol/dao/customerdao/CustomerDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ppol_spring/org/oz/sppol/dao/customerdao/CustomerDAOImpl.class" afterPath="$PROJECT_DIR$/out/production/ppol_spring/org/oz/sppol/dao/customerdao/CustomerDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ppol_spring/org/oz/sppol/service/customerservice/CustomerService.class" afterPath="$PROJECT_DIR$/out/production/ppol_spring/org/oz/sppol/service/customerservice/CustomerService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ppol_spring/org/oz/sppol/service/customerservice/CustomerServiceImpl.class" afterPath="$PROJECT_DIR$/out/production/ppol_spring/org/oz/sppol/service/customerservice/CustomerServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/ppol_spring_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/ppol_spring_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ppol_spring.iml" afterPath="$PROJECT_DIR$/ppol_spring.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ppol_spring_war_exploded/WEB-INF/pages/customer_create.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ppol_spring_war_exploded/WEB-INF/pages/customer_create.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ppol_spring_war_exploded/WEB-INF/pages/edit_customers.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ppol_spring_war_exploded/WEB-INF/pages/edit_customers.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/oz/sppol/controller/CustomerController.java" afterPath="$PROJECT_DIR$/src/org/oz/sppol/controller/CustomerController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/oz/sppol/dao/customerdao/CustomerDAO.java" afterPath="$PROJECT_DIR$/src/org/oz/sppol/dao/customerdao/CustomerDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/oz/sppol/dao/customerdao/CustomerDAOImpl.java" afterPath="$PROJECT_DIR$/src/org/oz/sppol/dao/customerdao/CustomerDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/oz/sppol/service/customerservice/CustomerService.java" afterPath="$PROJECT_DIR$/src/org/oz/sppol/service/customerservice/CustomerService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/oz/sppol/service/customerservice/CustomerServiceImpl.java" afterPath="$PROJECT_DIR$/src/org/oz/sppol/service/customerservice/CustomerServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/pages/customer_create.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/pages/customer_create.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/pages/edit_customers.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/pages/edit_customers.jsp" />
     </list>
     <ignored path="PPOL_SPRING.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,6 +33,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/PPOL_SPRING$tomcat7.coverage" NAME="tomcat7 Coverage Results" MODIFIED="1494313684864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -61,45 +52,66 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d0072602-0247-4ced-a9ae-8e37192c6eea/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="46" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CustomerController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/oz/sppol/controller/CustomerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="297" column="44" selection-start-line="297" selection-start-column="28" selection-end-line="297" selection-end-column="44" />
+            <state relative-caret-position="189">
+              <caret line="216" column="8" selection-start-line="216" selection-start-column="8" selection-end-line="216" selection-end-column="8" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3838#3839#0" expanded="true" />
-                <element signature="e#3898#3899#0" expanded="true" />
+                <element signature="e#5752#5753#0" expanded="true" />
+                <element signature="e#5833#5834#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="service-beans.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/service-beans.xml">
+      <file leaf-file-name="customer_create.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/customer_create.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="0" selection-start-line="12" selection-start-column="4" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="200">
+              <caret line="53" column="57" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="57" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomerService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/oz/sppol/service/customerservice/CustomerService.java">
+      <file leaf-file-name="edit_customers.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/edit_customers.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+            <state relative-caret-position="95">
+              <caret line="53" column="61" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customer_ng.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/customer_ng.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomerUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/oz/sppol/perzpageview/CustomerUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="986">
+              <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomerServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/oz/sppol/service/customerservice/CustomerServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -108,20 +120,8 @@
       <file leaf-file-name="CustomerDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/oz/sppol/dao/customerdao/CustomerDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomerUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/oz/sppol/perzpageview/CustomerUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+            <state relative-caret-position="187">
+              <caret line="15" column="39" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="false" />
               </folding>
@@ -132,27 +132,27 @@
       <file leaf-file-name="CustomerDAOImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/oz/sppol/dao/customerdao/CustomerDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+            <state relative-caret-position="197">
+              <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
               <folding>
-                <element signature="e#1535#1547#0" expanded="true" />
-                <marker date="1492600434163" expanded="true" signature="657:788" ph="SELECT CUSTO... SLS_CUSTOMER" />
-                <marker date="1492600434163" expanded="true" signature="3618:3700" ph="UPDATE SLS_C... " />
-                <marker date="1492600434163" expanded="true" signature="4173:4252" ph="INSERT INTO SLS_CUSTOMER... " />
-                <marker date="1492600434163" expanded="true" signature="4351:4495" ph="INSERT INTO SLS_CUSTOMER... " />
-                <marker date="1492600434163" expanded="true" signature="5216:5279" ph="UPDATE SLS_C... " />
-                <marker date="1492600434163" expanded="true" signature="5683:5769" ph="SELECT COLUM... FWK_PERZ_VIEW" />
-                <marker date="1492600434163" expanded="true" signature="7403:7435" ph="SELECT MAX(m... missingValue" />
+                <element signature="e#3209#3221#0" expanded="true" />
+                <marker date="1493026293451" expanded="true" signature="657:788" ph="SELECT CUSTO... SLS_CUSTOMER" />
+                <marker date="1493026293451" expanded="true" signature="3693:3775" ph="UPDATE SLS_C... " />
+                <marker date="1493026293451" expanded="true" signature="4248:4327" ph="INSERT INTO SLS_CUSTOMER... " />
+                <marker date="1493026293451" expanded="true" signature="4426:4570" ph="INSERT INTO SLS_CUSTOMER... " />
+                <marker date="1493026293451" expanded="true" signature="5291:5354" ph="UPDATE SLS_C... " />
+                <marker date="1493026293451" expanded="true" signature="5758:5844" ph="SELECT COLUM... FWK_PERZ_VIEW" />
+                <marker date="1493026293451" expanded="true" signature="7478:7510" ph="SELECT MAX(m... missingValue" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomerServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/oz/sppol/service/customerservice/CustomerServiceImpl.java">
+      <file leaf-file-name="CustomerService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/oz/sppol/service/customerservice/CustomerService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+            <state relative-caret-position="306">
+              <caret line="21" column="35" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -166,8 +166,8 @@
         <option value="spring-beans.schema" />
         <option value="Interface" />
         <option value="jsf" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -196,16 +196,13 @@
         <option value="$PROJECT_DIR$/src/org/oz/ppol/dao/CalApptDAO.java" />
         <option value="$PROJECT_DIR$/src/org/oz/ppol/dto/customerdto/CustomerDTO.java" />
         <option value="$PROJECT_DIR$/src/org/oz/ppol/perzpageview/PerzPage.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/pages/customer_create.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/pages/topbar.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/pages/header.xhtml" />
         <option value="$PROJECT_DIR$/web/WEB-INF/pages/footer.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/pages/topBar.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/pages/header.jsp" />
         <option value="$PROJECT_DIR$/src/org/oz/ppol/bo/customer/CustomerBO.java" />
         <option value="$PROJECT_DIR$/src/org/oz/ppol/dao/customerdao/CustomerDAO.java" />
         <option value="$PROJECT_DIR$/src/org/oz/ppol/service/customerservice/CustomerService.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/pages/edit_customers.jsp" />
         <option value="$PROJECT_DIR$/src/org/oz/ppol/dao/customerdao/CustomerDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/org/oz/ppol/controller/CustomerController.java" />
         <option value="$PROJECT_DIR$/src/org/oz/ppol/perzpageview/CustomerUtil.java" />
@@ -218,10 +215,18 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/pages/list_customers.jsp" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d0072602-0247-4ced-a9ae-8e37192c6eea/console.sql" />
         <option value="$PROJECT_DIR$/src/org/oz/sppol/dao/customerdao/CustomerDAO.java" />
-        <option value="$PROJECT_DIR$/src/org/oz/sppol/dao/customerdao/CustomerDAOImpl.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/service-beans.xml" />
         <option value="$PROJECT_DIR$/src/org/oz/sppol/service/customerservice/CustomerService.java" />
         <option value="$PROJECT_DIR$/src/org/oz/sppol/service/customerservice/CustomerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/org/oz/sppol/dao/customerdao/CustomerDAOImpl.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/pages/customer_create.jsp" />
+        <option value="$PROJECT_DIR$/web/resources/js/user_service.js" />
+        <option value="$PROJECT_DIR$/web/resources/js/user_controller.js" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/pages/header.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/pages/list_customers_ ng.jsp" />
+        <option value="$PROJECT_DIR$/web/resources/js/app.js" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/pages/edit_customers.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/pages/customer_ng.jsp" />
         <option value="$PROJECT_DIR$/src/org/oz/sppol/controller/CustomerController.java" />
       </list>
     </option>
@@ -247,10 +252,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1296" />
-    <option name="height" value="784" />
+    <option name="x" value="1" />
+    <option name="y" value="1" />
+    <option name="width" value="1278" />
+    <option name="height" value="766" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -294,11 +299,18 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
-        <subPane />
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PPOL_SPRING" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -318,14 +330,71 @@
       <recent name="E:\ppol_spring\lib" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\ppol_spring\lib" />
       <recent name="E:\ppol_spring\web\WEB-INF\pages" />
+      <recent name="E:\ppol_spring\web\resources\css" />
+      <recent name="E:\ppol_spring\web\resources\js" />
+      <recent name="E:\ppol_spring\lib" />
       <recent name="E:\ppol_spring\web" />
-      <recent name="E:\ppol_spring\web\WEB-INF" />
-      <recent name="E:\ppol_spring\src" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.tomcat7">
+    <configuration default="false" name="list_customers_ ng.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 7" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/WEB-INF/pages/list_customers_ ng.jsp" />
+      <deployment>
+        <artifact name="ppol_spring:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="list_customers__ng_jsp_PPOL_SPRING" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="51715" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="ppol_spring:war exploded" />
+        </option>
+      </method>
+    </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
       <deployment />
       <server-settings />
@@ -809,9 +878,15 @@
         </option>
       </method>
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.tomcat7" />
+      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.list_customers_ ng.jsp" />
     </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Tomcat Server.list_customers_ ng.jsp" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -882,12 +957,18 @@
       <workItem from="1492587553320" duration="8751000" />
       <workItem from="1492661743028" duration="1709000" />
       <workItem from="1492763912819" duration="12391000" />
-      <workItem from="1493007428972" duration="5128000" />
+      <workItem from="1493007428972" duration="18026000" />
+      <workItem from="1493094725079" duration="684000" />
+      <workItem from="1494221529755" duration="5335000" />
+      <workItem from="1494229885197" duration="1636000" />
+      <workItem from="1494233564021" duration="11078000" />
+      <workItem from="1494304767773" duration="15524000" />
+      <workItem from="1494324643152" duration="2240000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="474290000" />
+    <option name="totallyTimeSpent" value="523685000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -899,7 +980,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="784" extended-state="0" />
+    <frame x="1" y="1" width="1278" height="766" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -911,27 +992,28 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3923445" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32854864" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3338816" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32730263" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3258786" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2394822" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23891626" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922825" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.471246" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48519737" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48083067" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3258786" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3256579" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -950,51 +1032,15 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/org/oz/sppol/controller/CustomerController.java</url>
-          <line>166</line>
-          <properties />
-          <option name="timeStamp" value="84" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/org/oz/sppol/controller/CustomerController.java</url>
-          <line>327</line>
-          <properties />
-          <option name="timeStamp" value="86" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/org/oz/sppol/controller/CustomerController.java</url>
-          <line>282</line>
+          <line>116</line>
           <properties />
           <option name="timeStamp" value="87" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/org/oz/sppol/dao/customerdao/CustomerDAOImpl.java</url>
-          <line>72</line>
-          <properties />
-          <option name="timeStamp" value="88" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/org/oz/sppol/dao/customerdao/CustomerDAOImpl.java</url>
-          <line>54</line>
-          <properties />
-          <option name="timeStamp" value="89" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/org/oz/sppol/controller/CustomerController.java</url>
-          <line>348</line>
-          <properties />
-          <option name="timeStamp" value="90" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/org/oz/sppol/dao/customerdao/CustomerDAOImpl.java</url>
-          <line>97</line>
+          <line>101</line>
           <properties />
           <option name="timeStamp" value="91" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/org/oz/sppol/perzpageview/CustomerUtil.java</url>
-          <line>63</line>
-          <properties />
-          <option name="timeStamp" value="92" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/web/WEB-INF/pages/customer_create.jsp</url>
@@ -1004,21 +1050,27 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/org/oz/sppol/controller/CustomerController.java</url>
-          <line>105</line>
+          <line>197</line>
           <properties />
-          <option name="timeStamp" value="96" />
+          <option name="timeStamp" value="101" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/org/oz/sppol/service/customerservice/CustomerServiceImpl.java</url>
-          <line>121</line>
+          <url>file://$PROJECT_DIR$/src/org/oz/sppol/controller/CustomerController.java</url>
+          <line>127</line>
           <properties />
-          <option name="timeStamp" value="98" />
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/org/oz/sppol/controller/CustomerController.java</url>
+          <line>209</line>
+          <properties />
+          <option name="timeStamp" value="107" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="99" />
+      <option name="time" value="108" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
@@ -1032,48 +1084,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/oz/ppol/service/CalApptServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/update_customers.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/resources/images/delete.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/resources/images/edit.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/oz/ppol/dao/CalApptDAO.java" />
-    <entry file="jar://$PROJECT_DIR$/lib/spring-webmvc-4.3.4.RELEASE.jar!/META-INF/spring-form.tld">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="210" column="8" selection-start-line="210" selection-start-column="8" selection-end-line="210" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ppol_spring.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spring-webmvc-4.3.4.RELEASE.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/header.xhtml" />
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
@@ -1083,13 +1093,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/header.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/topBar.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1135,13 +1138,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spring-webmvc-4.3.4.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/spring-webmvc-4.3.4.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1155,55 +1151,10 @@
     <entry file="file://$PROJECT_DIR$/src/org/oz/ppol/dao/customerdao/CustomerDAOImpl.java" />
     <entry file="file://$PROJECT_DIR$/src/org/oz/ppol/service/customerservice/CustomerServiceImpl.java" />
     <entry file="file://$PROJECT_DIR$/src/org/oz/ppol/perzpageview/CustomerUtil.java" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/edit_customers.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1632">
-          <caret line="96" column="57" selection-start-line="96" selection-start-column="57" selection-end-line="96" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/oz/sppol/bo/customer/CustomerBO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/persistence-beans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/oz/sppol/dto/customerdto/CustomerDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1411">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spring-webmvc-4.3.4.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="560" column="0" selection-start-line="560" selection-start-column="0" selection-end-line="560" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1221,41 +1172,145 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/list_customers.jsp">
+    <entry file="jar://$PROJECT_DIR$/lib/com.fasterxml.jackson.databind.jar!/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="43" column="24" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/customer_create.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="52" column="88" selection-start-line="52" selection-start-column="88" selection-end-line="52" selection-end-column="88" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d0072602-0247-4ced-a9ae-8e37192c6eea/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
+        <state relative-caret-position="565">
           <caret line="35" column="46" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/spring-webmvc-4.3.4.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="561" column="0" selection-start-line="561" selection-start-column="0" selection-end-line="561" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/spring-webmvc-4.3.4.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/js/dataTables.scroller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/oz/sppol/dto/customerdto/CustomerDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="31" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/service-beans.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" selection-start-line="12" selection-start-column="4" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="306">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/persistence-beans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="33" column="65" selection-start-line="33" selection-start-column="65" selection-end-line="33" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/list_customers_ ng.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/customer_spring.jsp" />
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/list_customers.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="43" column="24" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+          <folding>
+            <marker date="1492585443859" expanded="true" signature="6117:6189" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/js/user_service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="29" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/js/user_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="28" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/oz/sppol/perzpageview/CustomerUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        <state relative-caret-position="986">
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
@@ -1264,8 +1319,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/oz/sppol/dao/customerdao/CustomerDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+        <state relative-caret-position="187">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
@@ -1275,58 +1330,75 @@
     <entry file="file://$PROJECT_DIR$/src/org/oz/sppol/service/customerservice/CustomerService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+          <caret line="21" column="35" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/edit_customers.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="53" column="61" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/customer_ng.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/spring-web-4.3.4.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/com.fasterxml.jackson.databind.jar!/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/oz/sppol/dao/customerdao/CustomerDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding>
-            <element signature="e#1535#1547#0" expanded="true" />
-            <marker date="1492600434163" expanded="true" signature="657:788" ph="SELECT CUSTO... SLS_CUSTOMER" />
-            <marker date="1492600434163" expanded="true" signature="3618:3700" ph="UPDATE SLS_C... " />
-            <marker date="1492600434163" expanded="true" signature="4173:4252" ph="INSERT INTO SLS_CUSTOMER... " />
-            <marker date="1492600434163" expanded="true" signature="4351:4495" ph="INSERT INTO SLS_CUSTOMER... " />
-            <marker date="1492600434163" expanded="true" signature="5216:5279" ph="UPDATE SLS_C... " />
-            <marker date="1492600434163" expanded="true" signature="5683:5769" ph="SELECT COLUM... FWK_PERZ_VIEW" />
-            <marker date="1492600434163" expanded="true" signature="7403:7435" ph="SELECT MAX(m... missingValue" />
-          </folding>
+        <state relative-caret-position="103">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/oz/sppol/service/customerservice/CustomerServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+        <state relative-caret-position="217">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/oz/sppol/dao/customerdao/CustomerDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+          <folding>
+            <element signature="e#3209#3221#0" expanded="true" />
+            <marker date="1493026293451" expanded="true" signature="657:788" ph="SELECT CUSTO... SLS_CUSTOMER" />
+            <marker date="1493026293451" expanded="true" signature="3693:3775" ph="UPDATE SLS_C... " />
+            <marker date="1493026293451" expanded="true" signature="4248:4327" ph="INSERT INTO SLS_CUSTOMER... " />
+            <marker date="1493026293451" expanded="true" signature="4426:4570" ph="INSERT INTO SLS_CUSTOMER... " />
+            <marker date="1493026293451" expanded="true" signature="5291:5354" ph="UPDATE SLS_C... " />
+            <marker date="1493026293451" expanded="true" signature="5758:5844" ph="SELECT COLUM... FWK_PERZ_VIEW" />
+            <marker date="1493026293451" expanded="true" signature="7478:7510" ph="SELECT MAX(m... missingValue" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/customer_create.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="53" column="57" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/oz/sppol/controller/CustomerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="297" column="44" selection-start-line="297" selection-start-column="28" selection-end-line="297" selection-end-column="44" />
+        <state relative-caret-position="189">
+          <caret line="216" column="8" selection-start-line="216" selection-start-column="8" selection-end-line="216" selection-end-column="8" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3838#3839#0" expanded="true" />
-            <element signature="e#3898#3899#0" expanded="true" />
+            <element signature="e#5752#5753#0" expanded="true" />
+            <element signature="e#5833#5834#0" expanded="true" />
           </folding>
         </state>
       </provider>
