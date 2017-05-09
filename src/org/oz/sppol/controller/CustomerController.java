@@ -32,6 +32,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.AbstractController;
+import org.springframework.web.util.UriComponentsBuilder;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -54,116 +55,16 @@ public class CustomerController {
 
 
 
-    /*public void setCustomerService(CustomerService customerService) {
-        this.customerService = customerService;
-    }*/
-
-
-
-   /* @Override
-    protected ModelAndView handleRequestInternal(HttpServletRequest request, HttpServletResponse response) throws  Exception {
-        List<CustomerDTO> customerDTOs = null;
-        HttpSession session = null;
-        customerDTOs = customerService.getAllCustomers();
-        *//*ObjectMapper mapper = new ObjectMapper();*//*
-        session = request.getSession();
-        session.setAttribute("lstCustomers",customerDTOs);
-
-        return  new ModelAndView("list_customers");
-    }*/
-
-
-    /*@RequestMapping(value = "/", method = RequestMethod.GET)
-    public String home(Locale locale, Model model)  {
-
-        List<CustomerDTO> customerDTOs = null;
-         customerDTOs=customerService.getAllCustomers();
-        ObjectMapper mapper = new ObjectMapper();
-
-        String jsonInString = null;
-
-
-            jsonInString = mapper.writeValueAsString(customerDTOs);
-
-
-        model.addAttribute("employeeList",jsonInString);
-        return "list_customers";
-    }*/
-
-
-    /*@GetMapping("/listCustomer")*/
-   /* @RequestMapping(value="/listCustomer",method = RequestMethod.GET,headers="Accept=application/json")
-    public List getListCustomers()
-    {
-        return customerService.getAllCustomersRest();
-    }*/
-
-    //@RequestMapping(value = "/listCustomers")
-    /*public String getAllCustomerJSON(Model model)
-    {
-
-
-        List<CustomerDTO> customerDTOs = null;
-        customerDTOs=customerService.getAllCustomersRest();
-        ObjectMapper mapper = new ObjectMapper();
-
-        String jsonInString = null;
-        try {
-            jsonInString = mapper.writeValueAsString(customerDTOs);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return jsonInString;
-
-    }*/
-    @RequestMapping(value = "/listCustomers")
-    public List getAllCustomerJSON(Model model)
-    {
-        return customerService.getAllCustomersRest();
-    }
-
-
-
-
-
+        /*ModelAndView Render part*/
     @RequestMapping(value="/list_customers",method = RequestMethod.GET)
     public ModelAndView viewCustomers(){
 
-
-        //String columnHeaders ="";
-        String columnHeaders1 ="";
-        //columnHeaders = customerService.getCustomViewHeaders(352);
-        //String[] csvValues = columnHeaders.split(",");
-        String jsonInString = getString();
-
-        ObjectMapper mapper = new ObjectMapper();
-
-        //Map<String,Object> columnMap = new HashMap<>();
-
-        //String columns = " COLUMNS :"+viewCustomerHeaders();
         JSONObject jsonData = new JSONObject();
         JSONArray dataArray = new JSONArray();
 
         jsonData.put("COLUMNS",viewCustomerHeaders());
         jsonData.put("DATA",customerService.getAllCustomers());
         dataArray.add(jsonData);
-
-
-
-        //List columnMap =new ArrayList();
-        //columnMap.add(columns);
-
-       /* try {
-            //columnHeaders=  mapper.writeValueAsString(csvValues);
-            //columnMap.put("COLUMNS",viewCustomerHeaders());
-            //columnMap.put("DATA",jsonInString);
-            columnHeaders1 =mapper.writeValueAsString(columnMap);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }*/
-
-
-
         return new ModelAndView("list_customers","lstCustomers",dataArray.toJSONString() );
     }
 
@@ -174,23 +75,10 @@ public class CustomerController {
         String columnHeaders ="";
         columnHeaders = customerService.getCustomViewHeaders(352);
         String[] csvValues = columnHeaders.split(",");
-       // Map<String,Object> columnMap = new HashMap<>();
-        //MultiValueMap columnMap = new MultiValueMap();
-        /*columnMap.put("title1",csvValues[0]);
-        columnMap.put("title2",csvValues[1]);
-        columnMap.put("title3",csvValues[2]);*/
-        //List columnMap = new ArrayList();
         JSONArray list = new JSONArray();
-        //JSONObject headers =new JSONObject(); ;
-        //JSONObject[] headers = new JSONObject[3]; ;
-        //String  custId = "{'title' :'CUSTOMERID'}";
         JSONObject jsonObject;
-        //new JSONObject().put(headers.put("title_01","CUSTOMERID"));
         for(int i = 0 ;i <= csvValues.length;i++)
         {
-            /*String  keyValue = "{ 'title' :'"+csvValues[i]+"'}";
-            columnMap.add(keyValue);*/
-            //columnMap.put("title_"+i,csvValues[i]);
             jsonObject = new JSONObject();
 
             if(i==csvValues.length)
@@ -202,65 +90,11 @@ public class CustomerController {
                 jsonObject.put("title",csvValues[i]);
             }
             list.add(jsonObject);
-
-
-
         }
-
-
-
-
         System.out.print(list);
 
-       /* ObjectMapper mapper = new ObjectMapper();
-
-
-        try {
-            columnHeaders=  mapper.writeValueAsString(columnMap);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }*/
-        return  list;
+       return  list;
     }
-
-   /* @RequestMapping(value="/list_customers_headers",method = RequestMethod.GET)
-    public @ResponseBody String viewCustomersHeaders(Model model){
-
-
-        String columnHeaders ="";
-         columnHeaders = customerService.getCustomViewHeaders(352);
-        String[] csvValues = columnHeaders.split(",");
-          *//*Map<String,Object> columnMap = new HashMap<>();
-                columnMap.put("sTitle",csvValues[0]);
-                columnMap.put("sTitle1",csvValues[1]);
-                columnMap.put("sTitle2",csvValues[2]);*//*
-
-
-            ObjectMapper mapper = new ObjectMapper();
-
-
-        try {
-            columnHeaders=  mapper.writeValueAsString(csvValues);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        //return new ModelAndView("list_customers","lstCustomers1",columnHeaders);
-       model.addAttribute("list_customers_headers",columnHeaders);
-        return  "jsonTemplate";
-    }*/
-    /*@RequestMapping(value="/list_customers",method = RequestMethod.GET)
-    public ModelAndView viewCustomers(Map<String,Object> modelMap){
-
-
-        String columnHeaders = customerService.getCustomViewHeaders(352);
-        String jsonInString = getString();
-
-        modelMap.put("headers",columnHeaders);
-        modelMap.put("jsonData",jsonInString);
-
-
-        return new ModelAndView("list_customers","lstCustomers",modelMap);
-    }*/
 
     private String getString() {
         List<CustomerDTO> customerDTOs = null;
@@ -282,63 +116,25 @@ public class CustomerController {
 
         CustomerDTO customerDTO = null;
         customerDTO=customerService.getCustomerId(id);
-        ObjectMapper mapper = new ObjectMapper();
-
-        String jsonInString = null;
-        try {
-            jsonInString = mapper.writeValueAsString(customerDTO);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-
         return new ModelAndView("edit_customers","command",customerDTO);
     }
 
-    @RequestMapping(value="/getCustomer/{id}",method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<CustomerDTO> getCustomerById(@PathVariable("id") int id){
-
-        CustomerDTO customerDTO = null;
-        customerDTO=customerService.getCustomerId(id);
-       if(customerDTO  == null)
-       {
-           return new ResponseEntity<CustomerDTO>(HttpStatus.NOT_FOUND);
-       }
 
 
-        return new ResponseEntity<CustomerDTO>(customerDTO, HttpStatus.OK);
 
-    }
-
-
-    @RequestMapping(value="/update_customer",method = RequestMethod.POST)
+    @RequestMapping(value="/update_customer", method = RequestMethod.PUT)
     public ModelAndView updateCustomer(@ModelAttribute("customerDTO")CustomerDTO customerDTO){
-    //public ModelAndView updateCustomer(@RequestParam("customerDTO")CustomerDTO customerDTO){
-    //public ModelAndView updateCustomer(@RequestBody CustomerDTO customerDTO){
-
          boolean bSuccess ;
-        //int id = customerDTO.getcustomerId();
         bSuccess=customerService.updateCusotmer(customerDTO);
         return new ModelAndView("edit_customers","command",customerDTO);
     }
 
-    @RequestMapping(value="/delete_customer/{id}", method = RequestMethod.GET)
+    @RequestMapping(value="/delete_customer/{id}")
     public ModelAndView deleteCustomer(@PathVariable("id") int id){
 
         CustomerDTO customerDTO = null;
          boolean bSuccess =customerService.deleteCustomer(id);
-        /*ObjectMapper mapper = new ObjectMapper();
-
-        String jsonInString = null;
-        try {
-            jsonInString = mapper.writeValueAsString(customerDTO);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }*/
         String jsonInString = getString();
-
-        //return new ModelAndView("list_customers","updateCustomer",jsonInString);
-        //return new ModelAndView("list_customers","lstCustomers",jsonInString);
         return new ModelAndView("redirect:/list_customers");
     }
 
@@ -356,6 +152,77 @@ public class CustomerController {
         return new ModelAndView("customer_create","command",new CustomerDTO());
     }
 
+        /*JsonData for RestController CRUD OPERATIONS*/
+
+    /*Retrieve all users*/
+    @RequestMapping(value="/contact/listCustomers",method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<List<CustomerDTO>> getCustomerById(){
+
+        List<CustomerDTO> customerDTO = null;
+        customerDTO=customerService.getAllCustomersRest();
+        if(customerDTO  == null )
+        {
+
+            return new ResponseEntity<List<CustomerDTO>>(HttpStatus.NO_CONTENT);
+        }
+
+
+        return new ResponseEntity<List<CustomerDTO>>(customerDTO, HttpStatus.OK);
+
+    }
+
+    @RequestMapping(value="/customer_ng",method = RequestMethod.GET)
+    public ModelAndView customerAngularView()
+    {
+        return new ModelAndView("customer_ng","listCustomer",getString());
+    }
+
+    /*Retrieve Single user*/
+
+    @RequestMapping(value="/contact/get/{id}",method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<String> getCustomerById(@PathVariable("id") int id){
+
+        CustomerDTO customerDTO = null;
+        customerDTO=customerService.getCustomerId(id);
+        if(customerDTO  == null || customerDTO.getcustomerId() <= 0)
+        {
+            return new ResponseEntity<String>("NO RECORD FOUND WITH DATA ID",HttpStatus.NOT_FOUND);
+        }
+        return new ResponseEntity(customerDTO, HttpStatus.OK);
+
+    }
+
+    @RequestMapping(value = "/customer/{id}", method = RequestMethod.DELETE)
+    public ResponseEntity<CustomerDTO> deleteUser(@PathVariable("id") int id) {
+        CustomerDTO customerDTO = null;
+        boolean bSuccess =customerService.deleteCustomer(id);
+        if (bSuccess) {
+            System.out.println("Unable to delete. User with id " + id + " not found");
+            return new ResponseEntity<CustomerDTO>(HttpStatus.NOT_FOUND);
+        }
+            return new ResponseEntity<CustomerDTO>(HttpStatus.NO_CONTENT);
+    }
+
+    @RequestMapping(value = "/customer/{id}", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<CustomerDTO> updateUser(@PathVariable("id") int id, @RequestBody CustomerDTO customerDTO) {
+
+        boolean bSuccess ;
+        CustomerDTO customerDTO1 = null;
+        customerDTO1=customerService.getCustomerId(id);
+        bSuccess=customerService.updateCusotmer(customerDTO);
+
+        if(bSuccess)
+            return new ResponseEntity<CustomerDTO>(customerDTO1, HttpStatus.OK);
+
+        
+        return new ResponseEntity<CustomerDTO>(HttpStatus.NOT_FOUND);
+
+
+    }
+
 
 
 }
+
+
+

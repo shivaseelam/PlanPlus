@@ -72,7 +72,11 @@ public class CustomerDAOImpl  extends  JdbcDaoSupport implements CustomerDAO {
 
         List<CustomerBO> customer = new ArrayList<CustomerBO>();
          customer = getCustomerBOs(customer,GET_CUSTOMER_ID,customerId);
-        return customer.get(0);
+            if(customer.size() > 0)
+            return customer.get(0);
+
+        return new CustomerBO();
+
     }
 
     @Override
