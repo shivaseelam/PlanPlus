@@ -1,6 +1,6 @@
-package org.oz.ppol.dao;
+package org.oz.sppol.dao;
 
-import org.oz.ppol.bo.CalApptBO;
+import org.oz.sppol.bo.CalApptBO;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import java.sql.ResultSet;

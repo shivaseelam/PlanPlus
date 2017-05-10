@@ -1,7 +1,7 @@
-package org.oz.ppol.controller;
+package org.oz.sppol.controller;
 
-import org.oz.ppol.dto.CalApptDTO;
-import org.oz.ppol.service.CalApptService;
+import org.oz.sppol.dto.CalApptDTO;
+import org.oz.sppol.service.CalApptService;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.AbstractController;
 

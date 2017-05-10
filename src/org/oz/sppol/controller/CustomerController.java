@@ -111,7 +111,7 @@ public class CustomerController {
     }
 
 
-    @RequestMapping(value="/edit_customers/id={id}", method = RequestMethod.GET)
+    @RequestMapping(value="/edit_customers/id={id}")
     public ModelAndView editCustomer(@PathVariable("id") int id){
 
         CustomerDTO customerDTO = null;
@@ -122,9 +122,10 @@ public class CustomerController {
 
 
 
-    @RequestMapping(value="/update_customer", method = RequestMethod.PUT)
-    public ModelAndView updateCustomer(@ModelAttribute("customerDTO")CustomerDTO customerDTO){
+    @RequestMapping(value="/update_customer/{id}", method = RequestMethod.POST)
+    public ModelAndView updateCustomer(@PathVariable("id") int id,@ModelAttribute("customerDTO")CustomerDTO customerDTO){
          boolean bSuccess ;
+        System.out.print("id="+id);
         bSuccess=customerService.updateCusotmer(customerDTO);
         return new ModelAndView("edit_customers","command",customerDTO);
     }
@@ -203,7 +204,7 @@ public class CustomerController {
             return new ResponseEntity<CustomerDTO>(HttpStatus.NO_CONTENT);
     }
 
-    @RequestMapping(value = "/customer/{id}", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
+    /*@RequestMapping(value = "/customer/{id}", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<CustomerDTO> updateUser(@PathVariable("id") int id, @RequestBody CustomerDTO customerDTO) {
 
         boolean bSuccess ;
@@ -218,7 +219,7 @@ public class CustomerController {
         return new ResponseEntity<CustomerDTO>(HttpStatus.NOT_FOUND);
 
 
-    }
+    }*/
 
 
 

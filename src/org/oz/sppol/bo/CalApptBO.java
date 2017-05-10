@@ -1,4 +1,4 @@
-package org.oz.ppol.bo;
+package org.oz.sppol.bo;
 
 import java.util.Hashtable;
 

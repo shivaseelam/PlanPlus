@@ -1,6 +1,6 @@
-package org.oz.ppol.service;
+package org.oz.sppol.service;
 
-import org.oz.ppol.dto.CalApptDTO;
+import org.oz.sppol.dto.CalApptDTO;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

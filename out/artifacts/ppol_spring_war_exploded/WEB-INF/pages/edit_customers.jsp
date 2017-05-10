@@ -318,7 +318,7 @@
 <a align="left" class="bu bu-5 bu-5a icon-back"  href="http://localhost:8080/list_customers"><span>Back</span></a>&nbsp;
 <a class="bu bu-5 bu-5a icon-remove"  onclick="deleteFun();"><span>Delete</span></a><hr>
 <h2 style=" background-color: #f5f5f5;border: 1px solid rgba(0,0,0,0.1);font-family: sans-serif;font-weight: normal;"><center>Edit Contact Details  </center> </h2>
-<form:form id="target" action="/update_customer" method="post">
+<form:form id="target" action="/update_customer/${id}" method="post">
     <div id="Container"  >
         <div id="rows" class="pull-left">
             <div id="cols" class="paddingleft">

@@ -1,4 +1,4 @@
-package org.oz.ppol.dto;
+package org.oz.sppol.dto;
 
 import java.io.Serializable;
 import java.util.Hashtable;
