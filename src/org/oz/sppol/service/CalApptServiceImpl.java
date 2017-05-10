@@ -1,8 +1,8 @@
-package org.oz.ppol.service;
+package org.oz.sppol.service;
 
-import org.oz.ppol.bo.CalApptBO;
-import org.oz.ppol.dao.CalApptDAO;
-import org.oz.ppol.dto.CalApptDTO;
+import org.oz.sppol.bo.CalApptBO;
+import org.oz.sppol.dao.CalApptDAO;
+import org.oz.sppol.dto.CalApptDTO;
 
 import java.util.ArrayList;
 import java.util.List;
