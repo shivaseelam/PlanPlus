@@ -136,7 +136,8 @@ public class CustomerController {
         CustomerDTO customerDTO = null;
          boolean bSuccess =customerService.deleteCustomer(id);
         String jsonInString = getString();
-        return new ModelAndView("redirect:/list_customers");
+        //return new ModelAndView("redirect:/list_customers");
+        return new ModelAndView("redirect:/customer_ng");
     }
 
     @RequestMapping(value="/create_customer")
@@ -144,7 +145,8 @@ public class CustomerController {
 
         boolean bSuccess ;
         bSuccess=customerService.createCustomer(customerDTO);
-        return new ModelAndView("redirect:/list_customers");
+        //return new ModelAndView("redirect:/list_customers");
+        return new ModelAndView("redirect:/customer_ng");
     }
 
     @RequestMapping(value="/displayForm")

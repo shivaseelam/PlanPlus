@@ -13,7 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
     <script>
         var App = angular.module('myApp',[]);
-        angular.module('myApp').factory('UserService', ['$http', '$q', function($http, $q){
+        angular.module('myApp').factory('CustomerService', ['$http', '$q', function($http, $q){
 
             var REST_SERVICE_URI = 'http://localhost:8080/contact/listCustomers';
             var CRUD_REST_SERVICE_URI = 'http://localhost:8080/customer/';
@@ -92,7 +92,7 @@
 
         }]);
 
-        angular.module('myApp').controller('UserController', ['$scope', 'UserService', function($scope, UserService) {
+        angular.module('myApp').controller('CustomerController', ['$scope', 'CustomerService', function($scope, CustomerService) {
             var self = this;
             self.customer={customerId:null,customerNumber:'',displayName:'',customerCategory:'',firstName:''};
             self.customers=[];
@@ -107,7 +107,7 @@
             fetchAllUsers();
 
             function fetchAllUsers(){
-                UserService.fetchAllUsers()
+                CustomerService.fetchAllUsers()
                         .then(
                                 function(d) {
                                     self.customers = d;
@@ -118,7 +118,7 @@
                         );
             }
             function createUser(customer){
-                UserService.createUser(customer)
+                CustomerService.createUser(customer)
                         .then(
                                 fetchAllUsers,
                                 function(errResponse){
@@ -127,7 +127,7 @@
                         );
             }
             function updateUser(customer, id){
-                UserService.updateUser(customer,id)
+                CustomerService.updateUser(customer,id)
                         .then(
                                 fetchAllUsers,
                                 function(errResponse){
@@ -137,7 +137,7 @@
             }
 
             function deleteUser(id){
-                UserService.deleteUser(id)
+                CustomerService.deleteUser(id)
                         .then(
                                 fetchAllUsers,
                                 function(errResponse){
@@ -202,6 +202,33 @@
         .email.ng-dirty.ng-invalid-email {
             background-color: yellow;
         }
+        .btn-ppol.orange {
+            background-color: #fb8404;
+            border: 1px solid #fb8404;
+            color: white;
+
+        }
+
+        .btn-ppol.chubby {
+            font-size: 12px;
+            height: 36px;
+            line-height: 23px;
+            padding: 5px 12px;
+            text-transform: capitalize;
+            font-weight: normal;
+            text-decoration: none;
+        }
+        .createbtn{
+
+            /* padding-left: 925px;
+             padding-right: 85px;
+             padding-top: 28px;
+             padding-bottom: 0px;
+             width: 87px;
+             height: 0px;*/
+            float: right;
+            height: 25px;
+        }
 
     </style>
 
@@ -210,9 +237,10 @@
     <spring:url value="resources/css/app.css" var="appCss" />
     <link href="${appCss}" rel="stylesheet" />
 </head>
+<div class="createbtn"><a class="btn-ppol orange chubby" title="Create New" href="/displayForm">Create New</a></div>
 <body ng-app="myApp" class="ng-cloak">
-<div class="generic-container" ng-controller="UserController as ctrl">
-    <div class="generic-container" ng-controller="UserController as ctrl">
+<div class="generic-container" ng-controller="CustomerController as ctrl">
+    <div class="generic-container" ng-controller="CustomerController as ctrl">
 
         <!-- Default panel contents -->
         <div class="panel-heading"><span class="lead">List of customer </span></div>
