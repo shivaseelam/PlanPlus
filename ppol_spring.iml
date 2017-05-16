@@ -39,5 +39,7 @@
     <orderEntry type="library" name="jackson-annotations-2.8.6" level="project" />
     <orderEntry type="library" name="jackson-core-2.8.6" level="project" />
     <orderEntry type="library" name="jackson-databind-2.8.6" level="project" />
+    <orderEntry type="library" name="angular" level="application" />
+    <orderEntry type="library" name="angular-route" level="application" />
   </component>
 </module>

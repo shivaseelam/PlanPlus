@@ -29,6 +29,7 @@
     <bean id="vr"  class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property  name="prefix" value="/WEB-INF/pages/"/>
         <property  name="suffix" value=".jsp"/>
+        <!--<property  name="suffix" value=".html"/>-->
     </bean>
 
     <mvc:resources mapping="/resources/**" location="/resources/"

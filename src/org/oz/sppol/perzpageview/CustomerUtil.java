@@ -55,7 +55,7 @@ public class CustomerUtil {
             if(col.equals("FIRST_NAME")){
                 if(customerBO.getfirstName() != null) {
                     if (customerBO.getfirstName().contains("'")) {
-                        customerBO1.add(customerBO.getfirstName().replace("'", "\'"));
+                        customerBO1.add(customerBO.getfirstName().replace("'", ""));
 
                     } else
                         customerBO1.add(customerBO.getfirstName());
@@ -63,7 +63,7 @@ public class CustomerUtil {
             }
             else if(col.equals("LAST_NAME")){
                 if (customerBO.getlastName().contains("'")){
-                    customerBO1.add(customerBO.getlastName().replace("'","\'"));
+                    customerBO1.add(customerBO.getlastName().replace("'"," "));
 
                 }else
                 customerBO1.add(customerBO.getlastName());
