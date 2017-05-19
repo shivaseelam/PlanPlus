@@ -26,7 +26,13 @@
         <property name="dataSource" ref="dataSource"/>
     </bean>
 
+    <bean id="fwkSubscriberDAO" class="org.oz.sppol.dao.common.subscriber.FwkSubscriberDAOImpl">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
 
+    <bean id="fwkUserDAO" class="org.oz.sppol.dao.common.user.FwkUserDAOImpl">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
 
     <context:component-scan base-package="org.oz.sppol.controller"></context:component-scan>
 

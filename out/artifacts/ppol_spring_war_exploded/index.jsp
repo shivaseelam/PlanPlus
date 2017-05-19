@@ -11,6 +11,6 @@
     <title>$Title$</title>
   </head>
   <body>
-  <h1>Welcome to Spring Calendar Appt </h1>
+  <jsp:forward page="/login"/>
   </body>
 </html>

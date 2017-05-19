@@ -32,9 +32,14 @@
         <!--<property  name="suffix" value=".html"/>-->
     </bean>
 
+
+
+
+    <mvc:resources mapping="/pages/**" location="/WEB-INF/pages/" />
+
     <mvc:resources mapping="/resources/**" location="/resources/"
                    cache-period="31556926"/>
+     <mvc:annotation-driven />
 
-    <mvc:annotation-driven />
 
 </beans>

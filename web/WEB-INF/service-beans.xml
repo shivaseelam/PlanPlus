@@ -14,6 +14,11 @@
          <property name="customerDAO" ref="customerDAO"/>
      </bean>
 
-
+    <bean id="fwkSubscriber" class="org.oz.sppol.service.common.subscriber.FwkSubscriberServiceImpl">
+            <property name="fwkSubscriberDAO" ref="fwkSubscriberDAO"/>
+    </bean>
+    <bean id="fwkUserService" class="org.oz.sppol.service.common.user.FwkUserServiceImpl">
+         <property name="fwkUserDAO" ref="fwkUserDAO"/>
+    </bean>
 
 </beans>
