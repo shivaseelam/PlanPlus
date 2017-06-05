@@ -12,7 +12,7 @@
         <script type="text/javascript" src="/resources/js/app.js"></script>
         <script type="text/javascript" src="/resources/js/login_authentication.js"></script>
         <script type="text/javascript" src="/resources/js/login_controller1.js"></script>
-
+        <base href="/"/>
 
         <!--<script type="text/javascript" src="/resources/js/login_controller.js"></script>-->
 
@@ -39,6 +39,8 @@
         </style>
     </head>
 <body>
+<div ng-view></div>
+
 <div ng-app="LoginForm" >
 
         <md-content ng-app="LoginForm" ng-controller="FormSubmitController" layout="row" layout-align="space-around" layout-padding="layout-padding" ng-cloak="ng-cloak" class="login-form">
