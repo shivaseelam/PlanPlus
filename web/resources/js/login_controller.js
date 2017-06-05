@@ -4,39 +4,52 @@
 
 'use strict';
 
-/*login.controller('FormSubmitController', function($scope, $http) {
+angular.module('LoginForm').controller('FormSubmitController', ['$scope','$location', 'AuthenticationService',
+    function FormSubmitController($scope,$location, AuthenticationService) {
+        $scope.login = login;
+        $scope.addEventListener = addEventListener;
 
-    $scope.vm = {
+        (function initController() {
+// reset login status
+            AuthenticationService.ClearCredentials();
+        })();
 
-    };
-});*/
+        function login() {
+//vm.dataLoading = true;
+            console.log($scope.accountname);
+            console.log($scope.username);
+            console.log($scope.password);
+            AuthenticationService.Login($scope.accountname, $scope.username,$scope.password, function (response) {
+                if (response) {
+                    console.log("login success");
 
+                    $location.path('/Login');
+//$scope.apply();
+//AuthenticationService.SetCredentials($scope.accountname,$scope.username, $scope.password);
 
-    app.controller('FormSubmitController', function($scope,$http){
-        $scope.submitform = submitform;
+                    /* $window.addEventListener('message', function(e) {
+                     $rootScope.$apply(function() {
+                     $location.path('/Login');
+                     console.log($location.path());
+                     console.log("success");
 
+                     });
+                     });*/
+                    /*$rootScope.$apply(function() {
+                     $location.path("/abc");
+                     console.log($location.path());
+                     console.log("success");
+                     });*/
 
-        function submitform()
-        {
-            console.log("submit")
+                } else {
 
-               var formData={
-                        accountname: $scope.accountname,
-                        username : $scope.username,
-                        password : $scope.password
-                };
-
-        console.log(formData);
-
-            var response = $http.post("submitform",formData);
-            response.success(function (data,status,headers,config) {
-                console.log(data+""+status);
+                    console.log("login failed");
+                }
             });
-            response.error(function (data,status,headers,config) {
-                console.log("error");
-            })
+        };
 
-        }
 
-    });
+    }]);
+
+
 
